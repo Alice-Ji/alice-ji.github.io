@@ -7,7 +7,6 @@
     />
     <meta charset="UTF-8" />
     <title>Alice Ji – About Me</title>
-    <meta name="description" content="Personal website of Alice Ji. Learn more about my background, research interests, and professional journey.">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link
@@ -15,11 +14,64 @@
       href="https://alice-ji.github.io/assets/flavicon.png"
       type="image/png"
     />
+    <style>
+      .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        align-items: center;
+      }
+      .project-grid img,
+      .project-grid iframe {
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      }
+      .project-desc h2 {
+        margin-top: 0;
+      }
+      .project-desc p {
+        margin: 0.5rem 0 1rem;
+      }
+      .project-desc a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        font-weight: bold;
+        color: var(--link-color, #0056b3);
+      }
+      .project-desc {
+        text-align: left;
+        font-size: 1.1rem; /* adjust as you like */
+        line-height: 1.6; /* improves readability */
+      }
+      .pub-link {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+      .pub-link a {
+        display: inline-block;
+        background: #2453aa;
+        color: #fff;
+        padding: 6px 16px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 500;
+        text-align: center;
+        transition: background 0.2s;
+        width: 100%;
+        min-width: 40px;
+      }
+      .pub-link a:hover {
+        background: #193366;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar">
       <a href="/" class="nav-link active">About</a>
-      <a href="/cv.html" class="nav-link">CV & Resume</a>
+      <a href="/cv.html" class="nav-link">CV/Resume</a>
       <a href="/research.html" class="nav-link">Research</a>
       <a href="/project.html" class="nav-link">Projects</a>
       <a href="/media.html" class="nav-link">Media</a>
@@ -35,31 +87,38 @@
         />
       </div>
       <h1>Alice Ji</h1>
-      <h2>Behavioral Data Scientist, PhD Student in Media & Communication</h2>
+      <h2>
+        Behavioral Data Scientist & Mixed-Methods Researcher
+        <br />bridging experimental design, behavioral analytics, and UX
+        insight.
+      </h2>
 
       <section class="about-section">
         <p>Welcome to my page.</p>
         <p>
-          I am Alice, a PhD student at the Institute of Communications Research,
-          University of Illinois at Urbana-Champaign.
+          I’m a PhD researcher at the Institute of Communications Research
+          (University of Illinois), studying how digital interfaces shape
+          attention, emotion, and persuasion. My work sits at the intersection
+          of media psychology, UX, and data science, where understanding why
+          people engage is as important as how they do.
         </p>
         <p>
-          I study the psychology of persuasion in digital media, especially how people pay attention, 
-          engage, and make decisions when faced with advertising, influencer marketing, health communication, 
-          or misinformation.
+          I design and code interactive prototypes (social feeds, shoppable
+          streaming platforms, gacha-style games) to test how interface design
+          and feedback loops influence user decision-making. These experiments
+          integrate biometric data (eye-tracking, facial emotion analysis) with
+          behavioral telemetry and qualitative insight to map engagement moment
+          by moment.
         </p>
         <p>
-          I design and build interactive digital environments: simulated social media feeds, shoppable streaming ads, 
-          and gacha-style games. These prototypes let me capture real user behavior in controlled settings. My methods 
-          bring together biometrics (eye-tracking, facial coding), experimental design, behavioral telemetry, and 
-          qualitative insights to map how <b>attention, emotion, and persuasion unfold moment by moment</b>.
+          My goal is to translate behavioral data into actionable insights for
+          digital products by turning psychological mechanisms into design
+          principles that improve user experience, trust, and persuasion
+          outcomes. I’ve presented this work at international conferences and
+          collaborated across communication, marketing, and computer-science
+          teams.
         </p>
-        <p>
-          My work bridges academia and industry: contributing to theories of
-          persuasion and media effects while generating insights relevant to
-          product design, advertising strategy, and consumer analytics.
-        </p>
-        <p>All of my projects revolve around a core focus:</p>
+        <p>My work is guided by a central theme:</p>
         <blockquote>
           <b
             >Understanding How Digital Environments Mediate Persuasion and
@@ -67,6 +126,110 @@
           >
         </blockquote>
       </section>
+
+      <section id="featured-projects">
+        <h1>Featured Projects</h1>
+        <br></br>
+
+        <!-- Affordance Study -->
+      <section class="project-grid">
+        <div>
+          <video width="100%" autoplay muted loop>
+            <source
+              src="https://alice-ji.github.io/assets/affordance-demo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-desc">
+          <h3>Social Media Affordance</h3>
+          <p>
+            Built a functional Instagram-style feed in <b>HTML/JS</b> with 
+            toggleable comments to test how platform affordances and reciprocity 
+            influence parasocial relationships and purchase intent.
+          </p>
+
+          <div class="pub-link">
+            <a
+              href="https://github.com/Alice-Ji/affordancePSIPSR"
+              target="_blank"
+              >View on GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Shoppable Ads -->
+      <section class="project-grid">
+        <div>
+          <video width="100%" autoplay muted loop>
+            <source
+              src="https://alice-ji.github.io/assets/shoppable-demo.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-desc">
+          <h3>Shoppable Advertising Study</h3>
+          <p>
+            Compared <b>interactive streaming TV</b> and <b>social media</b> ad 
+            formats to reveal how platform context drives attention and purchase 
+            intent for shoppable experiences.
+          </p>
+
+          <div class="pub-link">
+            <a href="https://github.com/Alice-Ji/TVShoppable" target="_blank"
+              >View TV version on GitHub</a
+            >
+          </div>
+          <div class="pub-link">
+            <a href="https://github.com/Alice-Ji/SMShoppable" target="_blank"
+              >View Social Media version on GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Gacha Game -->
+      <section class="project-grid">
+        <div>
+          <video width="100%" autoplay muted loop>
+            <source
+              src="https://alice-ji.github.io/assets/gacha-demo2.mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-desc">
+          <h3>Gacha Behavioral Economies</h3>
+          <p>
+            Developed a playable <b>gacha-style game</b> in <b>HTML/JS</b> to study 
+            how randomness, reward framing, and value perception affect trust and 
+            spending behavior.
+          </p>
+          <div class="pub-link">
+            <a href="https://github.com/Alice-Ji/Gacha" target="_blank"
+              >View on GitHub</a
+            >
+          </div>
+          <div class="pub-link">
+            <a
+              href="https://alice-ji.github.io/Gacha/index.html"
+              target="_blank"
+              >Play</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="pub-link" style="justify-content:center; font-size:1.1rem">
+        <a href="/project.html" style="width:200px">
+          View all projects
+          </a>
+      </div>
 
       <section class="contact-section">
         <a href="mailto:rji3@illinois.edu" class="contact-email"
