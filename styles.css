@@ -17,6 +17,10 @@ textarea {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,6 +31,7 @@ textarea {
   font-weight: 600;
   letter-spacing: 0.03em;
   padding: 18px 0 10px 0;
+  z-index: 1000;
 }
 
 .nav-link {
