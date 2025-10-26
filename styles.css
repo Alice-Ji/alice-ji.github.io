@@ -224,19 +224,88 @@ footer {
   margin-right: 0;
 }
 
+/* ---------------------- PROJECT GRID LAYOUT ---------------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns: media + desc */
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* make sure project text aligns left */
+.project-desc {
+  text-align: left;
+}
+
 @media (max-width: 600px) {
-  .navbar {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-bottom: 16px;
+  /* hide AJ logo on mobile */
+  .navbar img,
+  .navbar .logo,
+  .navbar span {
+    display: none !important;
   }
-  .dark-toggle {
-    font-size: 1em;
-    padding: 7px 10px;
-    margin-left: 0;
+
+  /* make navbar a simple two-line block */
+  .navbar {
+    display: block;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1.5px solid #e5e8ee;
+    padding: 10px 0 14px 0;
+    position: fixed;
     width: 100%;
-    margin-top: 10px;
-    /* Make sure it wraps to next line if needed */
+    z-index: 1000;
+  }
+
+  /* make all nav links inline so they sit on one line */
+  .navbar .nav-link {
+    display: inline-block !important;
+    font-size: 1em;
+    margin: 4px 8px;
+    white-space: nowrap;
+  }
+
+  /* put dark mode button centered below links */
+  .dark-toggle {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.95em;
+    padding: 6px 14px;
+  }
+
+  /* push main down so it clears navbar */
+  main {
+    margin-top: 110px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 28px 20px;
+  }
+}
+
+/* === Force project sections to stack on mobile === */
+@media (max-width: 700px) {
+  .project-grid {
+    display: flex !important; /* override inline grid */
+    flex-direction: column-reverse !important; /* description first */
+    gap: 24px !important;
+    align-items: stretch !important;
+  }
+
+  .project-grid > div {
+    width: 100% !important;
+  }
+
+  .project-grid iframe,
+  .project-grid video,
+  .project-grid img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px;
+  }
+
+  .project-desc {
+    text-align: left !important;
   }
 }
 
