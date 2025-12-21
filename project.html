@@ -103,411 +103,144 @@
       <br />
 
       <h2 style="text-align: left; font-size: 1rem">
-        I design and ship experimental prototypes to test how digital platforms 
-        like social media feed, video streaming website, and pay-to-play games
-        shape persuasion, attention, and consumer behavior. I build interactive
-        environments in HTML/JS, instrument them for behavioral logging (clicks,
-        comments, eye-tracking, sentiment), and deploy them in user studies. My
-        work generates actionable insights on advertising effectiveness,
-        platform affordances, and monetization mechanics, with results already
-        published in top communication journals and presented at international
-        conferences.
+        I take a <strong>product-first</strong> approach to behavioral research: 
+        start with real interfaces, test real tradeoffs, and let 
+        user behavior—not assumptions—drive design decisions. 
       </h2>
 
-      <br />
+      <h2 style="text-align: left; font-size: 1rem">
+        My work spans three connected areas:
+        <strong> 
+        (1) Choice Architecture and Decision Friction, 
+        (2) Social Influence in Monetized Platforms, 
+        and (3) User Autonomy in Interactive Systems
+        </strong>
+        using product-like prototypes to study 
+        how design shapes what people notice, choose, and buy.
 
-      <!-- Project: Donut Shop -->
-      <section class="project-grid">
-        <div>
-          <div>
-            <img
-              src="https://alice-ji.github.io/assets/DonutWorks.png"
-              alt="Donut Works"
-            />
+        I build and instrument product-like prototypes in HTML/JS/React 
+        for behavioral telemetry (clicks, scrolling, dwell time, comments, 
+        eye-tracking, sentiment), and evaluate design decisions through 
+        user studies. My work shows how strong user experience can align 
+        with strong revenue outcomes.
+      </h2>
+
+      <section class="card-grid">
+
+        <a href="/project/donut.html" class="project-card">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/assets/donut-card.png" alt="Donut Shop App">
+            <div class="card-tags">
+              <span>Choice Architecture</span>
+              <span>Customization UX</span>
+            </div>
           </div>
-        </div>
-        <div class="project-desc">
-          <h3>Donut Shop Ordering App</h3>
-          <p> <b>Challenge:</b> I approached the owner of my favorite local donut shop. 
-          The in-store ordering experience overwhelmed customers with 
-          dozens of topping options, no visualization, and decision paralysis—especially 
-          for kids and neurodivergent users. I wanted to explore how better UX could 
-          remove cognitive load and bring joy back to ordering. <br /><br />
-
-          <b>Prototype:</b> Designed and built a fully functional mobile ordering app in 
-          <b>HTML/CSS/JS</b>, including a <b>real-time donut customizer with layered 
-          toppings</b>, a “Can’t Decide?” recommendation system, and a one-tap randomizer for 
-          indecisive users. Includes cart, checkout, and animated receipt flow. <br /><br />
-
-          <b>Approach:</b> Applied decision-making research 
-          (<i>choice overload, progressive disclosure, visualization for cognitive 
-          offloading</i>) to streamline the user flow. Created custom PNG topping layers, 
-          generated thumbnails in-browser, and built dynamic UI behaviors such as 
-          shake-to-error feedback, confetti, and sticky headers. <br /><br />
-
-          <b>Key Insight:</b> Choice architecture matters—even for donuts. Simplifying 
-          decision steps, adding defaults, and visualizing outcomes dramatically reduces 
-          user hesitation and makes ordering faster, calmer, and more delightful.
-          </p>
-
-        <div class="pub-link">
-        <a href="https://donutworks.netlify.app/" target="_blank">View Interactive App Prototype</a>
-        </div>
-        </div>
-      </section>
-
-      <!-- Project 1: Affordance Study -->
-      <section class="project-grid">
-        <div>
-          <video width="100%" autoplay muted loop>
-            <source
-              src="https://alice-ji.github.io/assets/affordance-demo.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <p>Research Brief</p>
-          <iframe
-            src="https://drive.google.com/file/d/1TJ0l_-HGHOOGiI3tLKiIO1gQLKz0_itb/preview"
-            width="100%"
-            height="300"
-            style="border: 1.5px solid #e5e8ee; border-radius: 10px"
-            allow="autoplay"
-          >
-          </iframe>
-        </div>
-        <div class="project-desc">
-          <h3>Causal Role of Social Features in Buying</h3>
-          <p>
-            <b>Challenge:</b> Platforms like Instagram shape user–creator
-            relationships through features such as comments, but it was unclear
-            how removing these interactions would affect engagement and purchase
-            intent for sponsored posts. <br /><br />
-
-            <b>Prototype:</b> Built a fully functional Instagram-style feed in
-            <b>HTML/JS</b> with toggleable comments. Participants could scroll,
-            like, and interact in a naturalistic environment with embedded
-            sponsored content. <br /><br />
-
-            <b>Approach:</b> Logged user actions (<i
-              >comment length, frequency, sentiment</i
-            >) and paired with survey data on parasocial connection and consumer
-            attitudes. <br /><br />
-
-            <b>Key Insight:</b> Parasocial relationships predicted purchase
-            intent only when <b>comments were enabled</b>. Disabling comments
-            broke the PSR → purchase link, showing how small design changes can
-            disrupt creator–follower influence.
-          </p>
-
-          <div class="pub-link">
-            <a
-              href="https://github.com/Alice-Ji/affordancePSIPSR"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Project 2: Shoppable Ads -->
-      <section class="project-grid">
-        <div>
-          <video width="100%" autoplay muted loop>
-            <source
-              src="https://alice-ji.github.io/assets/shoppable-demo.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <p>Research Brief</p>
-          <iframe
-            src="https://drive.google.com/file/d/1Y5qVFIe1YscWCDbtYgb-xcKmJ1Z6lejt/preview"
-            width="100%"
-            height="300"
-            style="border: 1.5px solid #e5e8ee; border-radius: 10px"
-            allow="autoplay"
-          >
-          </iframe>
-        </div>
-        <div class="project-desc">
-          <h3>Shoppable Advertising Study</h3>
-          <p>
-            <b>Challenge:</b> As brands test <b>shoppable ad formats</b>, it was
-            unclear whether consumers would see them as useful enhancements or
-            disruptive interruptions — and whether effectiveness depends on
-            platform context (social vs. streaming). <br /><br />
-
-            <b>Prototype:</b> Built interactive <b>streaming TV</b> and
-            <b>social media</b> ad experiences in <b>HTML/JS</b>, allowing
-            direct comparison of shoppable vs. traditional formats. <br /><br />
-
-            <b>Approach:</b> Logged user interactions (<i
-              >clicks, overlay opens</i
-            >) and combined with <i>survey measures</i> of attention, attitudes,
-            and purchase intent, plus open-ended feedback on intrusiveness.
-            <br /><br />
-
-            <b>Key Insight:</b> On <b>social media</b>, shoppable ads felt
-            intrusive and lowered purchase intent. On <b>streaming TV</b>, the
-            same formats increased purchase intent by creating a lean-forward
-            shopping moment. Takeaway: <b>platform-fit is critical</b> when
-            rolling out interactive ad formats.
-          </p>
-
-          <div class="pub-link">
-            <a href="https://github.com/Alice-Ji/TVShoppable" target="_blank"
-              >View TV version on GitHub</a
-            >
-          </div>
-          <div class="pub-link">
-            <a href="https://github.com/Alice-Ji/SMShoppable" target="_blank"
-              >View Social Media version on GitHub</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Project 2.5: Shoppable Ads Livingroom -->
-      <section class="project-grid">
-        <div>
-          <img
-            src="https://alice-ji.github.io/assets/livingroom-demo.jpg"
-            alt="Livingroom Demo"
-          />
-          <video width="100%" autoplay muted loop>
-            <source
-              src="https://alice-ji.github.io/assets/livingroom-demo.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="project-desc">
-          <h3>Living Room Shoppable TV Ad Study</h3>
-          <p>
-            <b>Challenge:</b> With the rise of <b>shoppable TV ads</b>, brands need to understand how viewers 
-            respond to interactive purchase prompts embedded in a traditional viewing experience.  
-            <br /><br />
-            <b>Prototype:</b> Programmed a mock <b>streaming-TV environment</b> with scheduled ad breaks and 
-            interactive <b>shoppable overlays</b> allowing viewers to explore or purchase featured products in 
-            real time.  
-            <br /><br />
       
-            <b>Approach:</b> Conducted the study in a <b>naturalistic living-room lab</b>. Participants wore 
-            <b>eye-tracking goggles</b> while watching, enabling synchronized gaze and behavioral data capture. 
-            After viewing, participants completed a <b>post-experiment interview</b> discussing perceptions of 
-            novelty, usefulness, and intrusion.  
-            <br /><br />
+          <div class="card-text">
+            <h3>Donut Shop Ordering App</h3>
+            <p>
+              A UX case study conducted in partnership with a local food business, 
+              addressing decision paralysis in highly customizable ordering through 
+              choice architecture and streamlined user flows.
+            </p>
+          </div>
+        </a>
+
+        <a href="/project/shoppable.html" class="project-card">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/assets/shoppable-card.png" alt="Shoppable Advertising">
+            <div class="card-tags">
+              <span>Social Commerce</span>
+              <span>Interactive Advertising</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <h3>Shoppable Advertising Across Platforms</h3>
+            <p>
+              A multi-method research program testing how shoppable ad designs perform across 
+              platforms, from social feeds to streaming TV,
+              using interviews, experiments, and a living-room lab.
+            </p>
+          </div>
+        </a>
+
+        <a href="/project/affordance.html" class="project-card">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/assets/affordance-card.png" alt="Platform Affordance">
+            <div class="card-tags">
+              <span>Social Commerce</span>
+              <span>Platform Affordance</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <h3>When Social Features Drive Influencer Conversions</h3>
+            <p>
+              A causal study testing how platform affordances strengthen-or break—the link between 
+              influencer relationships and purchase intent.
+            </p>
+          </div>
+        </a>
+
+        <a href="/project/pharmaad.html" class="project-card">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/assets/pharmaad-card.png" alt="Pharmaceutical Advertising">
+            <div class="card-tags">
+              <span>Risk Communication</span>
+              <span>Social Commerce</span>
+            </div>
+          </div>
+          <div class="card-text">
+            <h3>Pharmaceutical Advertising on Social Media</h3>
+            <p>
+              An experimental research program examining how users attend to and comprehend risk disclosures
+              in regulated pharmaceutical ads and how alternative designs can improve engagement
+              without compromising compliance.
+            </p>
+          </div>
+        </a>
+
+        <a href="/project/aiwriting.html" 
+        class="project-card">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/assets/aiwriting-card.png" alt="AI Writing">
+            <div class="card-tags">
+              <span>User Autonomy</span>
+              <span>AI Assistance</span>
+            </div>
+          </div>
       
-            <b>Key Insights:</b> Most participants found the idea of shopping through TV “interesting,” 
-            but <b>few interacted</b> with the shoppable prompts. Eye-tracking revealed that when overlays appeared, 
-            viewers’ <b>gaze shifted toward their remote controls</b> more often than in traditional ad breaks, 
-            suggesting curiosity or intention to act. The open question: <b>what stopped that intention from becoming 
-              interaction?</b>  
-          </p>
-          <div class="pub-link">
-            <a href="https://medium.com/design-bootcamp/why-no-one-clicks-your-shoppable-tv-ads-even-if-they-want-to-2edc8e6076ce" target="_blank"
-              >Read on Medium · Featured in UX Collective</a
-            >
+          <div class="card-text">
+            <h3>The Ship of Theseus Paradox in AI-Assisted Writing</h3>
+            <p>
+              A multi-method study investigating how AI-assisted writing affects users’ 
+              sense of authorship and control across writing context.
+            </p>
+            <p>
+              Published on UX Collective
+            </p>
           </div>
-        </section>
-          </div>
-        </div>
+        </a>
 
-      <!-- Project: Ship of Theseus -->
-      <section class="project-grid">
-        <div>
-          <img
-            src="https://alice-ji.github.io/assets/theseus1.png"
-            alt="Ship of Theseus"
-          />
-          <img
-            src="https://alice-ji.github.io/assets/theseus2.png"
-            alt="Ship of Theseus"
-          />
-        </div>
-        <div class="project-desc">
-          <h3>The Ship of Theseus Paradox in AI-Assisted Writing</h3>
-          <p>
-            <b>Challenge:</b> As AI writing tools become invisible infrastructure, users increasingly rely on 
-            them, but also express unease about “losing their voice.” 
-            How does AI affect the feeling of <b>authorship</b> across writing contexts? 
-            <br /><br />     
-            <b>Approach:</b> Designed a within-subjects experiment where participants wrote three types of text 
-            (casual message, essay paragraph, code snippet), ran each through an AI writing tool for ten 
-            consecutive rewrites, and rated each rewrite on a "sense of ownership" scale. 
-            Collected follow-up interviews to triangulate interpretation with qualitative data on emotional risk and AI comfort.
-            <br /><br />
+        <a href="/project/gacha.html" class="project-card">
+          <div class="card-media">
+            <img src="https://alice-ji.github.io/assets/gacha-card.png" alt="Gacha Behavioral Economics">
+            <div class="card-tags">
+              <span>Behavioral Economics</span>
+              <span>Probalistic Reward</span>
+              <span>Platform Monetization</span>
+            </div>
+          </div>
       
-            <b>Key Insights:</b> <b>The more personal the writing, the faster authorship deteriorated</b>. Texting collapsed 
-            by iteration 3; essay writing faded slowly; code held steady. Emotional intimacy predicted resistance to AI assistance. 
-            Participants welcomed help in functional contexts, but rejected intervention in spaces tied to identity or self-expression.
-          </p>
-          <div class="pub-link">
-            <a href="https://medium.com/user-experience-design-1/the-ship-of-theseus-problem-in-ai-writing-9435a4a370fa" target="_blank"
-              >Read on Medium · Featured in UX Collective</a
-            >
+          <div class="card-text">
+            <h3>Gacha Behavioral Economics</h3>
+            <p>
+              A custom-built playable gacha game platform designed to study how 
+              probabilistic rewards, pricing, and progression mechanics shape 
+              player trust, spending, and engagement.
+            </p>
           </div>
-        </section>
-          </div>
-        </div>
-
-
-      <!-- Project 3: Drug Ad -->
-      <section class="project-grid">
-        <div>
-          <video width="100%" autoplay muted loop>
-            <source
-              src="https://alice-ji.github.io/assets/isi-demo.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-          <p>Research Brief</p>
-          <iframe
-            src="https://drive.google.com/file/d/1RK7ZvxiEh0CpJ3Ce5t2opaqpQnV68XiM/preview"
-            width="100%"
-            height="300"
-            style="border: 1.5px solid #e5e8ee; border-radius: 10px"
-            allow="autoplay"
-          >
-          </iframe>
-        </div>
-        <div class="project-desc">
-          <h3>Social Media Pharmaceutical Advertising</h3>
-          <p>
-            <b>Challenge:</b> Pharmaceutical ads on social media must present
-            both benefits and risks, but it was unclear how consumers actually
-            allocate attention, emotion, and memory across these sections — with
-            implications for health information recall. <br /><br />
-
-            <b>Prototype:</b> Created realistic
-            <b>pharma ad stimuli</b> embedded in a simulated social media feed,
-            contrasting benefit-focused content (e.g., lifestyle imagery) with
-            risk disclosures (e.g., scrolling side effects). <br /><br />
-
-            <b>Approach:</b> Used <b>eye-tracking</b> and
-            <b>facial emotion analysis</b> to generate heat maps of attention,
-            capture real-time affective responses, and measure post-exposure
-            <b>memory recall</b>. <br /><br />
-
-            <b>Key Insight:</b> Participants gave <b>less attention</b> and
-            showed <b>weaker memory</b> for risk sections compared to benefits,
-            with more negative emotional reactions during risk exposure.
-            Findings highlight the challenges of ensuring
-            <b>risk information is noticed and retained</b> in digital ad
-            formats.
-          </p>
-          <div class="pub-link">
-            <a
-              href="https://drive.google.com/file/d/1b22Ukb-iJwu6sjIL2h2Cx97ZRh2kKkwE/view?usp=sharing"
-              target="_blank"
-              >View Presentation</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Project 4: Gacha Game -->
-      <section class="project-grid">
-        <div>
-          <img
-            src="https://alice-ji.github.io/assets/gacha-demo.png"
-            alt="Gacha Game Demo"
-          />
-          <video width="100%" autoplay muted loop>
-            <source
-              src="https://alice-ji.github.io/assets/gacha-demo2.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="project-desc">
-          <h3>Gacha Behavioral Economies</h3>
-          <p>
-            <b>Challenge:</b> Mobile games depend on <b>gacha mechanics</b> for
-            engagement and monetization, but it’s unclear how design variables
-            (pull odds, banner framing, bonus gems) influence player trust,
-            spending, and progression. <br /><br />
-
-            <b>Prototype:</b> Built a fully functional
-            <b>gacha battle game</b> in <b>HTML/JS</b> with summon, battle, and
-            progression systems, allowing precise control over
-            <i
-              >odds, banner design, animations, endowment bonuses, pricing, and
-              rarity</i
-            >. <br /><br />
-
-            <b>Approach:</b> Logged player behavior and spending via
-            <b>Apps Script</b> to test how randomized rewards, completion bias,
-            and value framing drive engagement. <br /><br />
-
-            <b>Key Insight:</b> The platform provides a reusable testbed for
-            <b>behavioral economics</b> and <b>game UX</b> research, enabling
-            experiments on how design choices in gacha systems shift trust,
-            spending patterns, and purchase intent.
-          </p>
-          <div class="pub-link">
-            <a href="https://github.com/Alice-Ji/Gacha" target="_blank"
-              >View on GitHub</a
-            >
-          </div>
-          <div class="pub-link">
-            <a
-              href="https://alice-ji.github.io/Gacha/index.html"
-              target="_blank"
-              >Play</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <!-- Project 5: Game Subscription Economics -->
-      <section class="project-grid">
-        <div>
-          <img
-            src="https://alice-ji.github.io/assets/gamebreakeven-demo.png"
-            alt="Gacha Game Demo"
-          />
-        </div>
-
-        <div class="project-desc">
-          <h3>Game Value Dashboard</h3>
-          <p>
-            <b>Challenge:</b> With gaming shifting from ownership to
-            subscription models, players face an invisible calculus: when does
-            paying monthly outpace simply buying your games? <br /><br />
-
-            <b>Prototype:</b> A fully front-end dashboard built in
-            <b>HTML + CSS + JavaScript</b> that lets users simulate their
-            personal break-even point between buying and subscribing. Sliders
-            adjust <b>subscription price</b>, <b>game cost</b>,
-            <b>hours played</b>, and <b>years of play</b>, with a live-updating
-            neon chart that visualizes amortized cost over time. <br /><br />
-
-            <b>Approach:</b> Designed with a
-            <b>Steam-inspired cyberpunk aesthetic</b> and reactive UI, the
-            dashboard merges economic reasoning with visual play—showing how
-            attention, habit, and time investment translate into real monetary
-            efficiency. <br /><br />
-
-            <b>Key Insight:</b> Ownership versus access isn’t just a financial
-            decision. It’s a behavioral one. The tool turns abstract economics
-            into an interactive reflection of how players consume, optimize, and
-            rationalize value.
-          </p>
-
-          <div class="pub-link">
-            <a
-              href="https://alice-ji.github.io/GamepassBreakeven/"
-              target="_blank"
-            >
-              Open Live Dashboard
-            </a>
-          </div>
-        </div>
+        </a>
+      
       </section>
 
       <section class="contact-section">
