@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Alice Ji – Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Alice Ji. A showcase of projects bridging research and industry applications."
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="icon"
+      href="https://alice-ji.github.io/assets/flavicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/">
+        <img
+          src="https://alice-ji.github.io/assets/flavicon.png"
+          style="width: 24px; height: 24px;"
+        />
+      </a>
+      <a href="/" class="nav-link">About</a>
+      <a href="/project.html" class="nav-link active">Portfolio</a>
+      <a href="/research.html" class="nav-link">Research</a>
+      <a href="/cv.html" class="nav-link">CV/Resume</a>
+      <a href="/media.html" class="nav-link">Media</a>
+      <button id="dark-toggle" class="dark-toggle">🌒 Dark Mode</button>
+    </nav>
+
+    <main>
+
+        <section class="case-study">
+
+            <header class="case-header">
+                <figure>
+                    <img
+                      src="https://alice-ji.github.io/assets/aiwriting-card.png"
+                    />
+                  </figure>    
+              <h1>The Ship of Theseus Paradox in AI-Assisted Writing</h1>
+          
+              <p class="subtitle">
+                How repeated AI interventions reshape authorship, ownership, and user autonomy
+              </p>
+
+              <p class="subtitle">
+                Originally published on
+                <a
+                  href="https://uxdesign.cc/the-ship-of-theseus-problem-in-ai-writing-9435a4a370fa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  UX Collective
+                </a>
+              </p>
+          
+              <div class="case-meta">
+                <p><strong>Role:</strong> Mixed-Methods Researcher</p>
+                <p><strong>Methods:</strong> Experimental survey, mixed-effects modeling, interviews</p>
+                <p><strong>Tools:</strong> Qualtrics, R (lme4), AI writing tools</p>
+                <p><strong>Focus:</strong> User autonomy, psychological ownership, AI-assisted UX</p>
+              </div>
+            </header>
+          
+            <section class="case-glance">
+              <h2>At a Glance</h2>
+              <ul>
+                <li>Tested how repeated AI rewriting affects perceived authorship</li>
+                <li>Compared personal, academic, and functional writing contexts</li>
+                <li>Found that emotional intimacy predicts resistance to AI intervention</li>
+                <li>Derived design principles for context-aware AI assistance</li>
+              </ul>
+            </section>
+          
+            <section class="case-narrative">
+              <h2>Full Case Narrative</h2>
+          
+              <p>
+                AI writing tools have quietly become infrastructure. For many users, they function
+                less like collaborators and more like spellcheck: always on, rarely questioned,
+                woven into the act of writing itself. As these tools fade into the background,
+                concerns about authorship and “losing one’s voice” persist, but remain poorly
+                understood at the level of interface design.
+              </p>
+          
+              <p>
+                This project investigates a deceptively simple question:
+                <strong>when does AI assistance stop feeling like help and start feeling like
+                replacement?</strong> Drawing on the Ship of Theseus paradox, I examine how repeated
+                AI interventions affect users’ sense of authorship across different writing
+                contexts—and what this means for designing AI-assisted writing tools that respect
+                user autonomy.
+              </p>
+            </section>
+          
+            <section class="case-question">
+              <h2>Research Question</h2>
+              <p>
+                How does repeated AI rewriting influence perceived authorship, and why does that
+                effect differ across writing contexts?
+              </p>
+              <ul>
+                <li>Does perceived ownership decay at the same rate for all types of writing?</li>
+                <li>Are users more resistant to AI assistance in emotionally intimate contexts?</li>
+                <li>What design implications follow for AI writing interfaces?</li>
+              </ul>
+            </section>
+          
+            <section class="case-design">
+              <h2>Study Design</h2>
+              <figure>
+                <img
+                  src="https://alice-ji.github.io/assets/theseus1.png"
+                />
+              </figure>              
+              <p>
+                To explore these questions, I designed a within-subjects experimental study that
+                combined behavioral measures with qualitative follow-up.
+              </p>
+          
+              <p>Participants completed three writing tasks representing distinct writing contexts:</p>
+              <ol>
+                <li><strong>Casual text</strong> (e.g., a message to a friend)</li>
+                <li><strong>Essay paragraph</strong> (formal, academic writing)</li>
+                <li><strong>Code snippet</strong> (functional, task-oriented writing)</li>
+              </ol>
+          
+              <p>
+                Each participant wrote an original piece in each category, then passed the text
+                through an AI writing tool of their choice ten consecutive times, with each iteration
+                building on the previous output.
+              </p>
+          
+              <p>
+                After every rewrite, participants rated the text on a 1–7 scale:
+              </p>
+          
+              <blockquote>
+                “How much does this still feel like it’s yours?”
+              </blockquote>
+          
+              <p>
+                This design allowed me to model how perceived ownership changed over time and how
+                that trajectory differed by context.
+              </p>
+            </section>
+          
+            <section class="case-methods">
+              <h2>Methods & Analysis</h2>
+              <ul>
+                <li><strong>Platform:</strong> Qualtrics</li>
+                <li><strong>Sample:</strong> Convenience sample (friends, family, online volunteers)</li>
+                <li><strong>Analysis:</strong> Mixed-effects modeling in R (<code>lme4</code>) with
+                  natural splines to capture non-linear decay</li>
+                <li><strong>Supplement:</strong> Follow-up interviews to contextualize quantitative
+                  patterns</li>
+              </ul>
+          
+              <p>
+                All responses were anonymized and analyzed at the aggregate level.
+              </p>
+            </section>
+          
+            <section class="case-findings">
+              <h2>Key Findings</h2>
+              <figure>
+                <img
+                  src="https://alice-ji.github.io/assets/theseus2.png"
+                />
+            </figure> 
+          
+              <h3>1. Perceived authorship decays, but not uniformly</h3>
+              <p>
+                Across all conditions, perceived ownership declined with repeated AI rewriting.
+                However, the rate and magnitude of decay varied sharply by context.
+              </p>
+          
+              <ul>
+                <li><strong>Texting:</strong> Ownership dropped steeply by iteration 3</li>
+                <li><strong>Essay writing:</strong> Declined more gradually, crossing the midpoint later</li>
+                <li><strong>Code:</strong> Remained largely stable across iterations</li>
+              </ul>
+          
+              <p>
+                Participants reached the point where text felt “more AI than me” (below the scale
+                midpoint) at iteration 3 for texting, iteration 7 for essays, and never for code.
+              </p>
+          
+              <h3>2. Emotional intimacy predicts resistance to AI assistance</h3>
+              <p>
+                The more personal the writing, the faster users rejected AI intervention. Text
+                messages (messy, informal, emotionally loaded) were where participants felt most
+                protective. AI edits in this space were frequently described as invasive, even when
+                technically improving the text.
+              </p>
+          
+              <p>
+                Essay writing occupied a middle ground, while code was treated as almost entirely
+                functional. In this context, AI assistance was often described as welcome or even
+                necessary.
+              </p>
+          
+              <h3>3. Help feels different from replacement</h3>
+              <p>
+                Participants consistently distinguished between AI that supported their intent and
+                AI that substituted their voice. Highly polished outputs sometimes increased
+                discomfort in intimate contexts, reinforcing the feeling of being overwritten.
+              </p>
+            </section>
+          
+            <section class="case-interpretation">
+              <h2>Interpretation</h2>
+              <p>
+                Resistance to AI writing assistance is not driven by general mistrust of AI quality.
+                Instead, it reflects differences in psychological ownership and emotional risk.
+              </p>
+          
+              <p>
+                Writing that functions as identity invites protection; writing that functions as
+                utility invites automation. This produces a gradient of acceptable assistance rather
+                than a binary preference for or against AI.
+              </p>
+            </section>
+          
+            <section class="case-implications">
+              <h2>Design Implications for AI Writing Tools</h2>
+              <ul>
+                <li>Scale assistance with emotional intimacy of the writing context</li>
+                <li>Make authorship boundaries visible by showing what changed and why</li>
+                <li>Offer granular, reversible control over AI edits</li>
+                <li>Avoid dominant tone suggestions in personal writing spaces</li>
+                <li>Preserve user voice by default through adaptive style modeling</li>
+              </ul>
+            </section>
+          
+            <section class="case-conclusion">
+              <h2>Why This Matters</h2>
+              <p>
+                As AI writing tools become ubiquitous, users increasingly feel pressure not only to
+                write authentically, but to prove that they did. Designing systems that respect
+                psychological ownership is therefore a trust and adoption issue as well as a usability
+                one.
+              </p>
+          
+              <p>
+                The future of AI writing UX is about knowing when to finish a user’s sentence 
+                and when to leave their typos alone.
+              </p>
+            </section>
+          
+          </section>          
+
+          <div class="pub-link" style="justify-content:center; font-size:1.1rem">
+            <a href="/project.html" style="width:200px; height:30px; display:flex; justify-content:center; align-items:center;">
+                Back to Portfolio
+              </a>
+          </div>
+
+      <section class="contact-section">
+        <a href="mailto:rji3@illinois.edu" class="contact-email"
+          >rji3@illinois.edu</a
+        >
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/alice-ji-8a4b2a161/"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/assets/LinkedIn.png"
+              alt="LinkedIn"
+              title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?hl=en&user=CVlgqCAAAAAJ"
+            target="_blank"
+          >
+            <img
+              src="https://alice-ji.github.io/assets/GoogleScholarLogo.png"
+              alt="Google Scholar"
+              title="Google Scholar"
+            />
+          </a>
+          <a href="https://orcid.org/0009-0009-3730-8272" target="_blank">
+            <img
+              src="https://alice-ji.github.io/assets/ORCID.png"
+              alt="ORCID"
+              title="ORCID"
+            />
+          </a>
+          <a href="https://github.com/Alice-Ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/assets/github.png"
+              alt="Github"
+              title="Github"
+            />
+          </a>
+          <a href="https://medium.com/@alice-ji" target="_blank">
+            <img
+              src="https://alice-ji.github.io/assets/medium.png"
+              alt="Medium"
+              title="Medium"
+            />
+          <a href="https://madlabresearch.web.illinois.edu/" target="_blank">
+            <img
+              src="https://alice-ji.github.io/assets/madlab.png"
+              alt="MadLab"
+              title="MadLab"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Alice Ji</footer>
+
+    <script>
+      const btn = document.getElementById("dark-toggle");
+      if (localStorage.getItem("dark-mode") === "true") {
+        document.body.classList.add("dark-mode");
+        btn.textContent = "☀️ Light Mode";
+      }
+      btn.onclick = () => {
+        document.body.classList.toggle("dark-mode");
+        const enabled = document.body.classList.contains("dark-mode");
+        btn.textContent = enabled ? "☀️ Light Mode" : "🌒 Dark Mode";
+        localStorage.setItem("dark-mode", enabled);
+      };
+    </script>
+  </body>
+</html>
