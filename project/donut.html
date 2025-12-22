@@ -59,8 +59,9 @@
           
               <p class="subtitle">
                 A UX case study conducted in partnership with a local food business, 
-                addressing decision paralysis in highly customizable ordering through 
-                choice architecture and streamlined user flows.
+                designing and validating an MVP mobile ordering experience to 
+                reduce decision paralysis in highly customizable ordering 
+                through choice architecture, behavioral design, and streamlined user flows.
               </p>
           
               <div class="case-meta">
@@ -69,16 +70,17 @@
                 <p><strong>Methods:</strong> Field observation, informal interviews, behavioral theory</p>
                 <p><strong>Tools:</strong> Figma, Photoshop, HTML, CSS, JavaScript, React, Netlify</p>
                 <p><strong>Focus:</strong> Choice architecture, decision fatigue, user delight</p>
+                <p><strong>Constraints:</strong> Small business budget, rapid iteration, real-world deployment</p>
               </div>
             </header>
           
             <section class="case-glance">
                 <h2>At a Glance</h2>
                 <ul>
-                  <li>Observed decision paralysis in a real “build-your-own” food environment</li>
-                  <li>Redesigned the ordering flow using behavioral economics principles</li>
-                  <li>Built a fully functional mobile ordering prototype</li>
-                  <li>Demonstrated how better UX reduces cognitive load without reducing choice</li>
+                  <li>Identified decision paralysis and friction points through in-context behavioral observation</li>
+                  <li>Redesigned the ordering flow using behavioral economics and UX heuristics to reduce cognitive load</li>
+                  <li>Built a functional MVP mobile ordering prototype for rapid testing and iteration</li>
+                  <li>Demonstrated how improved UX can reduce cognitive load while preserving choice and business flexibility</li>
                 </ul>
               </section>
           
@@ -95,6 +97,9 @@
                   The abundance felt generous, but in practice it produced confusion, hesitation,
                   and regret. Kids froze. Adults overthought. Group orders felt stressful.
                   Customers routinely asked clarifying questions or changed their minds mid-order.
+                  From a product perspective, the chalkboard menu functioned as an 
+                  unstructured interface, forcing customers to perform unnecessary cognitive work 
+                  at the point of purchase.
                 </p>
             
                 <figure>
@@ -117,6 +122,9 @@
                   This environment mirrored classic findings in behavioral economics: when choice
                   sets become too large and poorly organized, people stall, default poorly, or walk
                   away dissatisfied.
+                  These issues created clear UX failure modes: stalled decisions, reliance on staff 
+                  intervention, order revisions, and post-purchase regret—all of which impact throughput, 
+                  satisfaction, and perceived quality.
                 </p>
 
                 <figure>
@@ -129,8 +137,9 @@
                 <h2>Design Framework</h2>
               
                 <p>
-                  I approached the redesign using principles from <strong>choice architecture</strong>
-                  and <strong>cognitive load theory</strong>, drawing on:
+                  I approached the redesign using principles from choice architecture, 
+                  cognitive load theory, and applied decision science, treating the 
+                  ordering flow as a decision system rather than a static menu.
                 </p>
               
                 <ul>
@@ -163,6 +172,8 @@
               
                 <h3>2. Structured Customization</h3>
                 <p>
+                  This step functioned as feature-level constraint design, guiding users through 
+                  a sequence of low-effort micro-decisions instead of a single high-cost choice.
                   Toppings were grouped into seven clear categories (icing, sprinkles, drizzles,
                   etc.). Users could choose one—or none—from each group, dramatically reducing
                   cognitive load.
@@ -174,6 +185,8 @@
               
                 <h3>3. Real-Time Visualization</h3>
                 <p>
+                  Real-time rendering acted as immediate feedback, reducing uncertainty and 
+                  improving decision confidence—key drivers of conversion in customizable products.
                   As users selected options, the donut updated live using layered PNG assets.
                   This eliminated ambiguity and reduced regret by making outcomes visible.
                 </p>
@@ -197,6 +210,11 @@
                 <figure>
                     <img src="https://alice-ji.github.io/assets/donut-nudge.gif" alt="Behavioral Nudge">
                   </figure>
+
+                  <p>
+                    These elements served as intentional fallback mechanisms, allowing users to 
+                    progress even under high cognitive load without abandoning the flow.
+                  </p>
               </section>
               
               <section class="case-flow">
@@ -218,7 +236,10 @@
                 <h2>Outcome & Reflection</h2>
               
                 <p>
-                    The prototype was tested informally with real customers using real phones in the shop.
+                  Informal usability testing and in-situ observation suggested reduced hesitation, 
+                  fewer clarification questions, and higher confidence at checkout 
+                  compared to the chalkboard baseline.
+                   
                     Users (especially children and neurodivergent users) responded strongly to the 
                     Randomizer and real-time visual build, often expressing excitement and confidence 
                     in their final choices.
@@ -228,8 +249,9 @@
                 </p>
               
                 <p>
-                    While the shop did not move forward with implementation due to resource constraints,
-                    the project functioned as a live behavioral laboratory. It revealed how choice
+                  Although the project did not progress to full deployment, the MVP validated 
+                  key assumptions about choice structuring, visualization, and default design 
+                  under real-world constraints. It revealed how choice
                     architecture, visualization, and defaults can meaningfully improve decision quality
                     without limiting freedom.
                 </p>
@@ -256,7 +278,8 @@
                   <li>More choices aren’t better. <strong>Better structure is</strong></li>
                   <li>Defaults and visualization reduce regret</li>
                   <li>Good UX protects users from fatigue, not from fun</li>
-                  <li>Revenue-friendly design can also be humane design</li>
+                  <li>Behavioral UX interventions can be low-cost, 
+                    high-leverage product improvements, especially in resource-constrained environments</li>
                 </ul>
 
                 <p>
