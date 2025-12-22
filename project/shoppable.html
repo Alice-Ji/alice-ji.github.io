@@ -57,8 +57,9 @@
     <h1>Shoppable Advertising Across Platforms</h1>
 
     <p class="subtitle">
-      A multi-study research program examining how shoppable advertising is interpreted,
-      tolerated, and acted upon across social media and streaming TV contexts.
+      A multi-study applied research program examining how shoppable advertising is 
+      interpreted, tolerated, and acted upon across social media and streaming TV contexts, 
+      with direct implications for product strategy, interaction design, and monetization decisions.
     </p>
 
     <div class="case-meta">
@@ -66,16 +67,17 @@
       <p>Methods: Interviews, controlled experiments, in-person behavioral lab</p>
       <p>Tools: Qualtrics, R, Figma, Photoshop, custom experimental platforms(HTML, React, Google Apps Script), eye tracking</p>
       <p>Focus: Platform motivation, user expectation, interaction friction</p>
+      <p>Scope: End-to-end research program informing product design, platform policy, and shoppable ad strategy</p>
     </div>
   </header>
 
   <section class="case-glance">
     <h2>At a Glance</h2>
     <ul>
-      <li>Conducted a four-phase research program spanning qualitative and experimental methods</li>
+      <li>Led a four-phase, end-to-end research program spanning qualitative discovery, controlled experimentation, and behavioral validation</li>
       <li>Tested shoppable ads on social media, streaming platforms, and a simulated living room TV</li>
-      <li>Collected behavioral, self-report, and biometric data</li>
-      <li>Developed the MEVN model to explain when shoppability helps or harms performance</li>
+      <li>Collected and integrated multimodal data (behavioral telemetry, self-report, biometric signals)</li>
+      <li>Developed the MEVN decision framework to support product and design teams in evaluating when shoppability adds value versus friction</li>
     </ul>
   </section>
 
@@ -94,6 +96,9 @@
       to interact with shoppable ads, when they find them helpful, and when they experience
       them as intrusive or disruptive. Industry teams frequently face uncertainty about
       whether shoppability increases value or simply adds friction.
+      This uncertainty creates real product risk: teams must invest in complex technical 
+      infrastructure without clear signals about user acceptance, conversion tradeoffs, 
+      or long-term platform health.
     </p>
 
     <p>
@@ -105,6 +110,11 @@
 
     <section class="program-overview" style="margin:4rem 0;">
   <h2 style="margin-bottom:1.5rem;">Program Overview</h2>
+
+  <p>
+    The program was structured like a product research roadmap, 
+    moving from discovery to validation to synthesis.
+  </p>
 
   <div style="
     display:grid;
@@ -129,8 +139,9 @@
       <div style="font-size:2.2rem; opacity:0.85;">1</div>
       <h3 style="margin:0.5rem 0; color: white;">Interview Study</h3>
       <p style="margin:0; opacity:0.9; line-height:1.5;">
-        Qualitative interviews to understand how people interpret and emotionally respond
-        to shoppable ads across platforms.
+        Qualitative interviews to understand user mental models, 
+        expectations, and emotional responses to shoppable ads 
+        across platforms.
       </p>
     </div>
 
@@ -148,8 +159,8 @@
       <div style="font-size:2.2rem; opacity:0.85;">2</div>
       <h3 style="margin:0.5rem 0; color: white;">Online Experiments</h3>
       <p style="margin:0; opacity:0.9; line-height:1.5;">
-        Controlled experiments testing shoppable versus non-shoppable ads on
-        social media and streaming platforms with behavioral telemetry.
+        Controlled experiments testing shoppable versus non-shoppable 
+        ads with behavioral telemetry, attention measures, and outcome metrics.
       </p>
     </div>
 
@@ -167,8 +178,8 @@
       <div style="font-size:2.2rem; opacity:0.85;">3</div>
       <h3 style="margin:0.5rem 0; color: white;">Living Room Lab</h3>
       <p style="margin:0; opacity:0.9; line-height:1.5;">
-        In-person simulation of TV viewing with eye tracking, facial analysis,
-        and real remote interaction to validate behavior in a natural setting.
+        High-fidelity behavioral validation in a naturalistic 
+        viewing environment to test ecological validity.
       </p>
     </div>
 
@@ -186,22 +197,12 @@
       <div style="font-size:2.2rem; opacity:0.85;">4</div>
       <h3 style="margin:0.5rem 0; color: white;">MEVN Model</h3>
       <p style="margin:0; opacity:0.9; line-height:1.5;">
-        Synthesis model integrating motivation, expectation, value, and network
-        effects to explain when shoppability succeeds or fails.
+        A conceptual and practical framework synthesizing findings 
+        into actionable guidance for design and product decisions.
       </p>
     </div>
 
   </div>
-
-  <p style="
-    margin-top:1.5rem;
-    color:#555;
-    max-width:800px;
-    line-height:1.6;
-  ">
-    The research program progressed from qualitative sensemaking to controlled experimentation,
-    behavioral validation, and model synthesis, with each stage informing the next.
-  </p>
 </section>
 
   <section class="case-methods">
@@ -218,6 +219,13 @@
       Interview transcripts were collaboratively cleaned and coded for emergent themes.
       Rather than starting with predefined assumptions, this phase focused on identifying
       how expectations, motivation, and perceived intrusiveness surfaced organically.
+      This phase functioned as generative UX research, surfacing user mental models 
+      and expectation mismatches that would later inform experimental design and hypothesis testing.
+    </p>
+
+    <p>
+    The resulting themes were synthesized into an insight framework mapping when shoppability 
+    creates value versus friction:
     </p>
 
     <section class="case-methods">
@@ -356,11 +364,13 @@
       I collaborated with a faculty advisor and a technical partner to build a custom
       experimental platform capable of injecting ads at precise moments and recording
       interaction telemetry.
+      This platform enabled precise manipulation, randomized assignment, and fine-grained 
+      interaction logging, supporting causal inference rather than purely observational analysis.
     </p>
 
     <p>
-      Across these studies, we tested multiple product categories to ensure that observed
-      effects were driven by shoppability rather than product-specific appeal.
+      To ensure generalizability, we tested multiple product categories and formats 
+      rather than optimizing for a single vertical.
     </p>
 
     <figure>
@@ -375,6 +385,15 @@
       <figcaption>
         Shoppability increased attention and engagement but affected purchase intent
         differently across platforms.
+      </figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://alice-ji.github.io/assets/shoppable-exp3.png" alt="Drivers of purchase intent" />
+      <figcaption>
+        Experimental results from Study 2 (n = 400) identify motivation–format alignment as a primary driver 
+        of purchase intent, with direct implications for optimizing shoppable ad design and revenue outcomes 
+        across platforms.
       </figcaption>
     </figure>
 
@@ -400,6 +419,8 @@
       The setup combined eye tracking, facial expression recording, interaction logging,
       post-experience surveys, and follow-up interviews. Each session lasted approximately
       one hour and required extensive coordination and custom tooling.
+      This phase prioritized ecological validity over scale, trading sample size for 
+      realism to capture behaviors that are often missed in online-only studies.
     </p>
 
     <figure>
@@ -410,7 +431,12 @@
     </figure>
 
     <section class="case-methods">
-  <h2>Journey Mapping: Shoppable TV Interaction</h2>
+  <h2>Service Blueprint: Shoppable TV Interaction</h2>
+
+  <p>
+    This service blueprint highlights breakdowns between user intent, 
+    system prompts, and perceived interaction cost.
+  </p>
 
   <div style="overflow-x:auto; margin-top:1.5rem;">
     <table style="width:100%; border-collapse:collapse; min-width:900px;">
@@ -557,14 +583,16 @@
     <p>
       Shoppability succeeds when these components align. When they conflict, engagement may
       increase while conversion suffers.
+      The MEVN model functions as a decision-support tool rather than a post-hoc explanation, 
+      helping teams anticipate failure modes before deploying shoppable features.
     </p>
   </section>
 
   <section class="case-implications">
-    <h2>Design Implications</h2>
+    <h2>Product & UX Implications</h2>
     <ul>
       <li>Align shoppability with why users are on the platform</li>
-      <li>Reduce perceived commitment costs for TV-based interactions</li>
+      <li>Reduce perceived commitment costs through reversibility, preview, and deferred interaction</li>
       <li>Make outcomes of interaction clear and reversible</li>
       <li>Avoid interruptive shoppability in relaxation-driven contexts</li>
     </ul>
@@ -583,6 +611,9 @@
       By translating an ambiguous industry question into a structured research program and
       a usable model, this work offers teams a practical framework for designing shoppable
       experiences that feel aligned rather than disruptive.
+      For product, UX, and applied science teams, this work demonstrates how combining 
+      qualitative sensemaking, controlled experimentation, and behavioral validation can 
+      de-risk complex interactive ad formats before large-scale rollout.
     </p>
   </section>
 
@@ -650,7 +681,7 @@
         </div>
       </section>
     </main>
-
+    
     <footer>&copy; 2025 Alice Ji</footer>
 
     <script>
