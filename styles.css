@@ -639,6 +639,70 @@ body.dark-mode .pub-citation {
   margin-top: 0.5rem;
 }
 
+/* ===== Case Study Slideshow ===== */
+
+.case-slideshow {
+  position: relative;
+  margin: 2.5rem 0;
+}
+
+.slideshow-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slideshow-track {
+  display: flex;
+  transition: transform 0.6s ease;
+  will-change: transform;
+}
+
+.slideshow-track img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 12px;
+}
+
+/* Controls */
+.slideshow-controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.slideshow-controls button {
+  all: unset;
+  pointer-events: auto;
+  background: rgba(255, 255, 255, 0.85);
+  border: none;
+  width: 36px;
+  height: 36px;
+  margin: 0 12px;
+  border-radius: 999px;
+  font-size: 22px;
+
+  display: inline-flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.case-slideshow:hover .slideshow-controls button {
+  opacity: 1;
+}
+
+.slideshow-controls button:hover {
+  transform: scale(1.05);
+}
+
 /* ===== Links ===== */
 
 .case-study a {
